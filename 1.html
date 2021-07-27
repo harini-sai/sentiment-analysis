@@ -1,0 +1,40 @@
+<!DOCTYPE html> 
+<html>
+    <head>
+        <meta charset="utf-8">
+	<title>Sentiment classification application</title> 
+	<style type="text/css" media="all">
+	    html {
+		background-color: #0B0C10;
+	    }
+	    h2 {
+		font-family: Arial, Helvetica, sans-serif; 
+		color: black;
+		text-shadow: 3px 3px 2px grey;
+	    }
+body {
+	width: 1000px;
+	margin: 70px auto; 
+	background-color: #C5C6C7; 
+	padding: 60px 60px 60px 60px; 
+	border: 10px solid grey;
+}
+	</style>
+    
+    </head>
+
+    <body>
+	<form align="middle" action = "http://localhost:5000/result" method = "post">
+	     <img src="https://qph.fs.quoracdn.net/main-qimg-d92d95c9ffba23f88a108ee29f661468" alt-"Sentiment icons" style="width: 30%; height: 30%;"> 
+	     <p><h2>Welcome to the sentiment classification application. Good to have you here! </h2></p> 
+	     <p><h3 style="color: midnightblue">Enter the text in the text box and we'll classifiy the text for you</h3></p><br /> 
+	     <textarea rows="4" cols="60" name= "text1" required></textarea><br /><br /> 
+	     <input type="submit" name="submit" value="Submit" /> 
+	     <input type="reset" name="reset" value="Reset" />
+	     
+	</form>
+
+    
+    </body> 
+</html>
+ 
