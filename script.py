@@ -20,7 +20,7 @@ def resl():
       text2=request.form['text1']   
       if text2: 
           r=senti_pipeline(text2)
-          return render_template('t1.html',res=r)
+          return render_template('t1.html',res=r[0]['label'],scr=r[0]['score'])
   
 if __name__ =="__main__":  
     app.run(debug = True, use_reloader=False)  

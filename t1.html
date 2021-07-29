@@ -7,7 +7,7 @@
 	    html {
 		background-color: #0B0C10;
 	    }
-	    h2 {
+	    h2,h3 {
 		font-family: Arial, Helvetica, sans-serif; 
 		color: black;
 		text-shadow: 3px 3px 2px grey;
@@ -23,11 +23,15 @@ body {
     
     </head>
 
-    <body align="middle">
-	
+    <body >
+	<form align="middle" action = "http://localhost:5000/" >
 	     <img src="https://qph.fs.quoracdn.net/main-qimg-d92d95c9ffba23f88a108ee29f661468" alt-"Sentiment icons" style="width: 30%; height: 30%;"> 
-	     <p><h2>We have classified your text as follows!</h2></p> 
-	     <p id="res">{{res}}</p>
+	     <p><h2>We have classified your text as follows!</h2></p> <br />
+	     <p id="res"><h3>Label : {{res}}</h3></p>
+	     <p id="scr"><h3>Score : {{scr}}</h3></p><br />
+	     <input type="submit" name="submit" value="Enter new text" />
+	     
+	</form>
     </body> 
 </html>
  
