@@ -5,7 +5,7 @@ Created on Mon Jul 26 12:40:01 2021
 @author: Harini
 """
 
-!pip install -q transformers
+#!pip install -q transformers
 from transformers import pipeline
 senti_pipeline=pipeline("sentiment-analysis")
 
